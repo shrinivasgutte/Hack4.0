@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techiessquad.mrtn.doctor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.BIND_NFC_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Request_Send.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientProfileDitails.HomeTab_1_CasePaperDitails"
+            android:label="@string/title_activity_home_tab_1__case_paper_ditails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientProfileDitails.HomeTab2_reportsDetails"
+            android:label="@string/title_activity_home_tab2_reports_ditails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientProfileDitails.HomeTab_3_medicalDitails"
+            android:label="@string/title_activity_home_tab_3_medical_ditails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".UploadCasePaper"
+            android:label="@string/title_activity_upload_case_pape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddPatient"
+            android:label="@string/title_activity_add_patient"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientProfile"
+            android:label="@string/title_activity_patient_profile"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadReport"
+            android:label="@string/title_activity_upload_report"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadMedicine"
+            android:label="@string/title_activity_upload_medicine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Patient"
+            android:label="@string/title_activity_patient"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techiessquad.mrtn.doctor.Home" />
+        </activity>
+        <activity
+            android:name=".Pharmacy"
+            android:label="@string/title_activity_pharmacy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailedPatientProfile"
+            android:label="@string/title_activity_detailed_patient_profile"
+            android:parentActivityName=".PatientProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Password" />
+        <activity
+            android:name=".Request_Send.Request_Send_Form"
+            android:label="@string/title_activity_request__send__form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PatientProfileDitails.Patient_Offline_Data"></activity>
+    </application>
+
+</manifest>

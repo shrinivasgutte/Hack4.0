@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_patient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#EEEEEE"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top|center"
+                    android:foregroundGravity="center_horizontal">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/profile_image_view"
+                        android:layout_margin="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/circle"/>
+                    <ImageButton
+                        android:id="@+id/profile_image_button"
+                        android:foregroundGravity="top|center"
+                        android:layout_margin="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_menu_camera"
+                        android:contentDescription=""/>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                app:met_floatingLabel="highlight"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Enter Aadhar Number"
+                app:met_floatingLabelText="Aadhar Number"
+                android:inputType="number"
+                android:id="@+id/ET_Aadhar_NO"
+                app:met_iconLeft="@drawable/ic_fingerprint_black_36dp"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                app:met_floatingLabel="highlight"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Enter First Name"
+                android:inputType="textPersonName"
+                app:met_floatingLabelText="First Name"
+                app:met_iconLeft="@drawable/account"
+                android:id="@+id/ET_First_Name" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:hint="Enter Middle Name"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Middle Name"
+                android:id="@+id/ET_Middle_Name" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="highlight"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:hint="Enter Last Name"
+                app:met_floatingLabelText="Last Name"
+                android:id="@+id/ET_Last_Name" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:inputType="textPostalAddress"
+                app:met_floatingLabel="highlight"
+                android:hint="Enter Address"
+                app:met_floatingLabelText="Address"
+                android:id="@+id/ET_Address"
+                app:met_iconLeft="@drawable/phone"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ET_DOB"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_width="match_parent"
+                app:met_floatingLabel="highlight"
+                android:layout_height="wrap_content"
+                app:met_floatingLabelText="Date of Birth"
+                android:hint="Select Date of birth"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="Gender"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Gender"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/GMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Male"/>
+                    <RadioButton
+                        android:id="@+id/GFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Female"/>
+                </RadioGroup>
+
+            </LinearLayout>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bloodgroup"/>
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="State"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/State"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:text="City"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/City"></Spinner>
+            </LinearLayout>-->
+
+            <Spinner
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+
+                android:spinnerMode="dropdown"
+                android:paddingBottom="13dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="41dp"></Spinner>
+
+            <Spinner
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+
+                android:spinnerMode="dropdown"
+                android:paddingBottom="13dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="41dp"></Spinner>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:layout_margin="4dp"
+                app:met_floatingLabel="highlight"
+                android:hint="Enter Contact Number"
+                app:met_floatingLabelText="Contact Number"
+                android:id="@+id/ET_Contact_NO"
+                app:met_iconLeft="@drawable/phone"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ET_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+
+                android:hint="Enter Username"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Username"
+                app:met_iconLeft="@drawable/at" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ET_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Password"
+                app:met_iconLeft="@drawable/phone" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                app:met_floatingLabel="highlight"
+                android:hint="Enter Password Again"
+                app:met_floatingLabelText="Verify Password"
+                android:id="@+id/ET_Verify_Password"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:inputType="textEmailAddress"
+                android:layout_margin="4dp"
+                android:hint="Enter Email ID"
+                app:met_floatingLabelText="Email ID"
+                android:id="@+id/ET_Email_ID"
+                app:met_iconLeft="@drawable/ic_action_name"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+
+                android:layout_margin="4dp"
+                android:hint="Enter Allergies"
+                app:met_floatingLabelText="Allergies"
+                android:id="@+id/Allergies"
+                app:met_iconLeft="@drawable/ic_action_name"/>
+
+            <Spinner
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/spinner_style"
+                android:spinnerMode="dropdown"
+                android:paddingBottom="13dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="41dp"></Spinner>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:hint="Enter Speciality"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Middle Name"
+                android:id="@+id/ET_Speciality" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:hint="Enter CertificateNo"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Middle Name"
+                android:id="@+id/ET_CertificateNo" />
+
+            <Spinner
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+
+                android:spinnerMode="dropdown"
+                android:paddingBottom="13dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/h"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="41dp"></Spinner>
+        </LinearLayout>
+    </ScrollView>
+</android.widget.RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_patient"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Patient" />
+        <item
+            android:id="@+id/nav_lab"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Labs" />
+        <item
+            android:id="@+id/nav_pharmacy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Pharmacy" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_menu_send"
+                android:title="FAQ" />
+        </menu>
+    </item>
+
+</menu>

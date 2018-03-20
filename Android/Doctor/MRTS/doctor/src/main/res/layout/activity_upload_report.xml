@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techiessquad.mrtn.doctor.UploadReport">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_upload_report" />
+    <TextView
+        android:id="@+id/casepaperlabel"
+        android:layout_width="wrap_content"
+        android:padding="4dp"
+        android:layout_height="36dp"
+        android:background="#6412cf28"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:text="Upload for New Operation"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+    <LinearLayout
+        android:background="#8e5ac2cf"
+
+            android:id="@+id/layouta"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|start"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/name"
+            app:met_floatingLabelText="Type"
+            android:hint="Enter Report Name"
+            app:met_textColorHint="#fff"
+            app:met_baseColor="#fff"
+            android:layout_width="match_parent"
+            app:met_underlineColor="#fff"
+            android:layout_height="wrap_content"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/type"
+            app:met_floatingLabelText="Type"
+            android:hint="Enter Type"
+            app:met_textColorHint="#fff"
+            app:met_baseColor="#fff"
+            android:layout_width="match_parent"
+            app:met_underlineColor="#fff"
+            android:layout_height="wrap_content"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabelText="Description"
+            android:id="@+id/Description"
+            android:hint="Enter Description"
+            app:met_textColorHint="#fff"
+            app:met_baseColor="#fff"
+            app:met_underlineColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

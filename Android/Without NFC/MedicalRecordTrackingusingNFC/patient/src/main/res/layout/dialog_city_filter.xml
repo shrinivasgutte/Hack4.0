@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="290dp">
+
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/drop" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/drop" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="203dp"
+        android:src="@drawable/drop" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/stateCity_DialogTitle"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+    <!--
+    <EditText
+        android:id="@+id/username"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/username" />
+
+        <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"/>
+
+    <com.rey.material.widget.Spinner
+        style="@style/Material.Widget.Spinner"
+        android:id="@+id/a"
+        android:minWidth="72dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:spn_labelEnable="true"
+        app:spn_labelTextColor="#1139ba"
+        app:spn_arrowColor="#1ea9f4"
+        app:spn_label="helpp"
+        app:spn_dividerHeight="4dp"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_gravity="start|center_vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <com.rey.material.widget.Spinner
+        app:spn_labelEnable="true"
+        app:spn_labelTextColor="#1ea8f3"
+        app:spn_label="State"
+        android:theme="@style/TabWidgetTheme"
+
+        style="@style/Material.Widget.Spinner"
+        android:id="@+id/b"
+        app:spn_arrowColor="#1ea9f4"
+        android:layout_width="120sp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+
+        android:padding="8dp"
+        app:rd_style="@style/Material.Drawable.LinearProgress"/>
+-->
+
+
+
+
+    <Spinner
+        android:paddingLeft="15dp"
+       android:paddingTop="7dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@drawable/spinner_style"
+        android:spinnerMode="dropdown"
+        android:paddingBottom="13dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="41dp"></Spinner>
+
+        <Spinner
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/spinner_style"
+            android:spinnerMode="dropdown"
+            android:paddingBottom="13dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_height="41dp"></Spinner>
+        <Spinner
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/spinner_style"
+            android:spinnerMode="dropdown"
+            android:paddingBottom="13dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_height="41dp"></Spinner>
+
+        <!--
+                <Spinner
+                    android:paddingLeft="15dp"
+
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/spinner_style"
+                    android:spinnerMode="dropdown"
+                    android:paddingBottom="13dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/b"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="41dp"></Spinner>
+
+        -->
+
+    </LinearLayout>
+</RelativeLayout>

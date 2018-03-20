@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:gravity="center"
+  >
+
+
+    <ImageView
+        android:layout_width="157dp"
+        android:layout_height="164dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_nfc_black_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan to login"
+            android:layout_marginBottom="50dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:textColor="#fdfdfe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:textColorHint="#fdfdfe"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:id="@+id/login_username"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/login_button"
+            android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

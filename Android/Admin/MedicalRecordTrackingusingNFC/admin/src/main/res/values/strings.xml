@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Admin</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_tab_1">Pending</string>
+    <string name="home_tab_2">Accepted</string>
+    <string name="home_tab_3">Rejected</string>
+    <string name="title_activity_home_request_rejecting">HomeRequestRejectingActivity</string>
+    <string name="title_activity_doctor">DoctorActivity</string>
+    <string name="doctor_tab_1">All Doctor</string>
+    <string name="doctor_tab_2">Find Doctor</string>
+    <string name="content_dialogue">Are you sure, you want to reject it?</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="title_activity_patient">PatientActivity</string>
+    <string name="patient_tab_1">All Patient</string>
+    <string name="patient_tab_2">Find Patient</string>
+    <string name="title_activity_labs">LabsActivity</string>
+    <string name="title_activity_pharmacy">PharmacyActivity</string>
+
+    <string name="margin">48dp</string>
+    <string name="title_activity_case_paper_image">CasePaperImage</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_report_image">ReportImage</string>
+
+    <string name="title_activity_medicine_image">MedicineImage</string>
+    <string name="title_activity_upload_case_paper">UploadCasePaper</string>
+    <string name="title_activity_upload_report">UploadReport</string>
+    <string name="title_activity_upload_medicine">UploadMedicine</string>
+    <string-array name="bloodgroups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="title_activity_add_patient">AddPatient</string>
+    <string name="title_activity_patient_profile">PatientProfile</string>
+    <string name="title_activity_family_patient__medical_reoprt__ditails">
+        FamilyPatient_MedicalReoprt_Ditails
+    </string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_home_tab_1__case_paper_ditails">HomeTab_1_CasePaperDitails</string>
+    <string name="title_activity_home_tab2_reports_ditails">HomeTab2_reportsDitails</string>
+    <string name="title_activity_home_tab_3_medical_ditails">HomeTab_3_medicalDitails</string>
+    <string name="title_activity_family_tab1__patient_ditails">FamilyTab1_PatientDitails</string>
+    <string name="title_activity_doctor_tab1_recent_ditails">DoctorTab1_recentDitails</string>
+
+
+    <string name="action_simple_usage">Simple usage</string>
+    <string name="action_styled_view">Styled view</string>
+    <string name="action_rotation_support">Rotation support</string>
+    <string name="action_custom_objects">Custom objects</string>
+
+    <string name="action_description_simple_usage">Traditional viewer without any customizing. The fastest way to implement.</string>
+    <string name="action_description_styled_view">Customized viewer with overlay view, custom margins and padding.</string>
+    <string name="action_description_rotation_support">Example of how to handle activity rotation.</string>
+    <string name="action_description_custom_objects">Using formatter for custom objects - forget about converting.</string>
+    <string name="view">View</string>
+
+    <string name="share">Share</string>
+    <string name="message_open_viewer">Tap on any image to open viewer!</string>
+    <string name="message_styling">Open options menu in toolbar to check available options to change!</string>
+    <string name="message_on_dismiss">Dialog was successfully dismissed!</string>
+    <string name="message_rotate">Open the viewer and try to rotate device. Important! Don\'t forget to enable rotation settings :)</string>
+    <string name="custom_objects_hint">This example uses custom image objects and shows images via custom formatter.</string>
+    <string name="got_it">Got it!</string>
+    <string name="action_options">Options</string>
+    <string name="image_margin">48</string>
+
+    <string-array name="options">
+        <item>hide status bar</item>
+        <item>images margin</item>
+        <item>container padding</item>
+        <item>images rounding</item>
+        <item>swipe-to-dismiss</item>
+        <item>zooming</item>
+        <item>show overlay</item>
+        <item>random background</item>
+        <item>post-processing (via ImageRequestBuilder)</item>
+    </string-array>
+    <string name="title_activity_add_doctor">AddDoctor</string>
+    <string name="title_activity_hospital_ragistration">HospitalRagistration</string>
+
+</resources>

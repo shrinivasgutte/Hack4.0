@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techiessquad.mrtn.doctor.PatientProfileDitails.Patient_Offline_Data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="Offline Emergency Data."
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:background="#a52195f2"/>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient ID: "
+            android:layout_margin="5dp"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#req_id"
+            android:textStyle="bold"
+            android:id="@+id/p_id"
+            android:layout_margin="5dp"
+            android:textColor="#000"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Name : "
+
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#name"
+            android:textStyle="bold"
+            android:id="@+id/p_name"
+
+            android:textColor="#000"
+            android:textSize="17dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency Contact No : 1 "
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#cnno"
+            android:id="@+id/c_no1"
+            android:textColor="#000"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact No : 2 "
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#cnno"
+            android:id="@+id/c_no2"
+            android:textColor="#000"
+            android:textSize="17dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:layout_margin="5dp"
+                android:textSize="14dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#req_id"
+                android:textStyle="bold"
+                android:id="@+id/bloodgroup"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age :"
+                android:layout_margin="5dp"
+                android:textSize="14dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#req_id"
+                android:textStyle="bold"
+                android:id="@+id/age"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender :"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#cnno"
+            android:id="@+id/gender"
+            android:textColor="#000"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergies :"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="alr"
+            android:padding="5dp"
+            android:background="#85d2e6e4"
+            android:inputType="textLongMessage"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:id="@+id/allergies"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#cnno"
+            android:id="@+id/body"
+            android:textColor="#000"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diseases"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#cnno"
+            android:id="@+id/diseases"
+            android:textColor="#000"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

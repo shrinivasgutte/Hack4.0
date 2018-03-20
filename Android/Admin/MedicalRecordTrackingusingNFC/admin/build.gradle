@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "com.techiessquad.mrtn.admin"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+ext {
+    supportVersion = '27.0.1'
+    frescoVersion = '1.2.0'
+}
+
+
+
+
+
+
+
+
+dependencies {
+    // compile project(':frescoimageviewer')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.0.1'
+    implementation 'com.android.support:support-v4:27.0.1'
+    implementation 'com.android.support:recyclerview-v7:27.0.1'
+    compile 'com.android.support:cardview-v7:27.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    //  androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'io.github.yavski:fab-speed-dial:1.0.6'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.github.ganfra:material-spinner:2.0.0'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+    compile 'com.android.volley:volley:1.1.0'
+    compile 'com.github.bumptech.glide:glide:4.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.9.0'
+    //compile 'org.apache.httpcomponents:httpclient:4.5'
+
+
+    compile 'com.github.stfalcon:frescoimageviewer:0.5.0'
+    compile "com.facebook.fresco:fresco:1.2.0"
+
+
+}

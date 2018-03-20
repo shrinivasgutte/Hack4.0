@@ -1,0 +1,1 @@
+include ':app', ':doctor', ':patient', ':admin', ':phramacy', ':labs', ':utilities'

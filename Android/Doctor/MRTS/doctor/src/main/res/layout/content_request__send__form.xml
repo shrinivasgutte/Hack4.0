@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techiessquad.mrtn.doctor.Request_Send.Request_Send_Form"
+    tools:showIn="@layout/activity_request__send__form">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#35c581"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profileicon"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Patient  name"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_margin="5dp"
+                        android:textSize="16dp"
+                        android:id="@+id/p_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/p_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="5dp"
+                    android:text="Patient id"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#b5d4e2e1"
+            android:gravity="bottom"
+            android:lines="5"
+            android:padding="5dp"
+            android:text="desc"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Table Name"
+            android:textSize="14dp"/>
+
+
+        <Spinner
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+
+            android:spinnerMode="dropdown"
+            android:paddingBottom="13dp"
+
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_height="41dp"></Spinner>
+
+
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Column Name"
+            android:textSize="14dp"/>
+
+
+        <Spinner
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+
+            android:spinnerMode="dropdown"
+            android:paddingBottom="13dp"
+
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_height="41dp"></Spinner>
+
+        <TextView
+            android:id="@+id/tv_old_value"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Info."
+            android:textSize="14dp"/>
+        <TextView
+            android:text="colname"
+            android:textColor="@color/colorPrimary"
+            android:clickable="false"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:id="@+id/old_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"/>
+
+
+        <TextView
+            android:id="@+id/new_vlaue"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Naw Info."
+            android:textSize="14dp"/>
+        <EditText
+            android:text="new value"
+            android:textColor="@color/colorPrimary"
+
+            android:layout_marginLeft="4dp"
+
+            android:textSize="16dp"
+            android:id="@+id/new_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"/>
+
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:textColor="#fff"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#12dc7e"
+            android:text="update"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

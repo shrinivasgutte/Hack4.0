@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:id="@+id/lab_icon"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="2dp"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/microscope"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#034561"/>
+    <LinearLayout
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:src="@drawable/download"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#034561"/>
+
+        <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="doctor_name"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/quali_hint"
+                android:textStyle="italic"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:hint="Qualification"
+                android:textSize="10dp"/>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Qualification"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:layout_marginLeft="4dp"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+
+                android:textSize="12dp"
+                android:id="@+id/quali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+            <TextView
+                android:textStyle="italic"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hospital"
+                android:id="@+id/dhospital_name_hint"
+                android:textSize="10dp"/>
+
+
+            <TextView
+
+                android:textColor="@color/colorPrimary"
+                android:text="hospital_name"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/dhospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

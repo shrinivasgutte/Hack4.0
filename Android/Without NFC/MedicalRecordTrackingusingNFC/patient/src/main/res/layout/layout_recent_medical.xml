@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="4dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_marginEnd="4dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MedicalName"
+    android:textSize="10dp"
+    android:textStyle="italic"/>
+
+            <TextView
+                android:gravity="end"
+                android:id="@+id/datetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meeted Date"
+                android:textSize="10dp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+           android:text="Ajit Shitole"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:id="@+id/medical_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/casep_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="ddate"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="10dp"
+            android:textStyle="italic"/>
+              <TextView
+                  android:text="Address"
+                  android:textColor="@color/colorPrimary"
+                  android:id="@+id/address"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:clickable="false"
+                  android:cursorVisible="false"
+                  android:focusableInTouchMode="false"
+                  android:gravity="center_vertical"
+                  android:textSize="12dp" />
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact No."
+            android:textSize="10dp"
+            android:textStyle="italic"/>
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:text="Contactno"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:id="@+id/contactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
